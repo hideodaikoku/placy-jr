@@ -1,5 +1,6 @@
 import React, {Component} from "react"; 
 import SearchBar from "./SearchBar";
+import AppStyles from "../styles/app.module.css";
 
 export default class App extends Component {
 
@@ -20,12 +21,19 @@ export default class App extends Component {
 
     render(){
         return(
-            <div>
-                <SearchBar
-                 handleInputChange = {this._handleInputChange}
-                 query = {this.state.query}
-                ></SearchBar>
-                <h1>{this.state.query}</h1>
+            <div className={AppStyles.content}>
+                <div
+                    className = {AppStyles.container}
+                >
+                    <div className={AppStyles.search}>
+                        <h1 className={AppStyles.header}>Placy Search</h1>
+                        <SearchBar
+                            handleInputChange = {this._handleInputChange}
+                            query = {this.state.query}
+                        />
+                    </div>
+                    <p className={AppStyles.text}>{this.state.query}</p> 
+                </div>
             </div>
         )
     }

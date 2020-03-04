@@ -1,0 +1,21 @@
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: black;
+}
+
+.header{
+    color: white;
+}
+
+.text{
+    color: white;
+}
+
+.search-bar{
+    position: absolute;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
