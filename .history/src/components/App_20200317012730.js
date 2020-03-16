@@ -32,12 +32,7 @@ export default class App extends Component {
                             query = {this.state.query}
                         />
                     </div>
-                    <button 
-                        onClick={() => {window.location = 'http://localhost:5000/login'}}
-                        className={AppStyles.loginButton}
-                    >
-                        Sign in with Spotify
-                    </button>
+                    <button onClick={() => {window.location = 'http://localhost:5000/login'}}>Sign in with Spotify</button>
                 </div>
             </div>
         )

@@ -28,6 +28,7 @@
 .loginButton{
     margin-top: 1rem;
     padding: 1rem;
-    border-radius: 1.5rem;
-    text-transform: uppercase;
+    padding-bottom: 1rem;
+    border-radius: .2rem;
+    height: 20px;
 }

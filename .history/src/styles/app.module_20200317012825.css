@@ -25,9 +25,6 @@
     width: 40vw;
 }
 
-.loginButton{
-    margin-top: 1rem;
+.login-button{
     padding: 1rem;
-    border-radius: 1.5rem;
-    text-transform: uppercase;
 }

@@ -34,7 +34,7 @@ export default class App extends Component {
                     </div>
                     <button 
                         onClick={() => {window.location = 'http://localhost:5000/login'}}
-                        className={AppStyles.loginButton}
+                        className="login-button"
                     >
                         Sign in with Spotify
                     </button>
