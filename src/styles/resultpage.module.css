@@ -14,6 +14,7 @@
     padding: 1rem;
     color: black;
     border-right: 1px solid black;
+    grid-column: 1/1;
 }
 
 #title{
@@ -107,4 +108,11 @@ ul{
 
 .info:hover{
     cursor: pointer;
+}
+
+@media only screen and (max-width:1200px){
+
+    .container{
+        grid-column: 1/2;
+    }
 }
