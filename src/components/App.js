@@ -7,7 +7,7 @@ const local_endpoint = 'http://localhost:8000';
 const public_endpoint = 'https://boiling-garden-91117.herokuapp.com/';
 
 const local_rec_endpoint = 'http://0.0.0.0:5000';
-const public_rec_endpoint = '';
+const public_rec_endpoint = 'https://boiling-beach-00069.herokuapp.com/';
 
 export default class App extends Component {
 
