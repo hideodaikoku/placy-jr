@@ -1,8 +1,32 @@
-.content{
-    background-color: black;
+.contentA{
+    background-image: url('../assets/backgrounds/1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
     height: 100vh;
     margin: 0;
+    position: relative;
 }   
+
+.contentB{
+    background-image: url('../assets/backgrounds/2.png');    
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.contentC{
+    background-image: url('../assets/backgrounds/3.png');    
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
 
 .container{
     max-width: 600px;
@@ -11,24 +35,125 @@
 }
 
 .header{
-    color: white;
+    color: black;
     margin:0 auto;
 }
 
 .text{
-    color: white;
+    color: black;
 }
 
 .search{
-    width: 40%;
-    padding-top: 40%;
-    width: 40vw;
+    padding-top: 60%;
     position: relative;
 }
 
 .loginButton{
-    margin-top: 1rem;
+    position: absolute;
+    top:63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
     padding: 1rem;
     border-radius: 1.5rem;
+    border: none;
+    background-color: rgb(24,157,78);
+    color: white;
+    font-size: 1rem;
     text-transform: uppercase;
+}
+
+.logoContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.helpText{
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    width: 100%;
+    margin-bottom: 0;
+    transform: translateX(-50%);
+    font-size: .9rem;
+}
+
+.or{
+    text-align: center; 
+    margin: 1rem auto;
+}
+
+.placyLogo{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    height: 2.5rem;
+}
+
+.info{
+    position: absolute;
+    background-color: #FDD000;
+    color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: .5rem;
+    text-align: center;
+    bottom: 3rem;
+    right: 3rem;
+    cursor: pointer;
+}
+.info:hover{
+    box-shadow: 0px .2rem .6rem rgba(84, 83, 83, 0.425)
+}
+
+@media only screen and (max-width:768px){
+    .loginButton{
+        top: 55%;
+    }
+    .helpText{
+        font-size: .7rem;
+        max-width: 500px;
+    }
+    .or{
+        margin-top: 4rem;
+    }
+}
+@media only screen and (max-width:600px){
+    .or{
+        margin-top: 4rem;
+    }
+    .loginButton{
+        top: 65%;
+        padding: .6rem;
+        border-radius: 2rem;
+    }
+    .helpText{
+        width: 400px;
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .loginButton{
+        top: 60%;
+        padding: .6rem;
+        border-radius: 1.8rem;
+    }
+    .or{
+        margin-top: 4rem;
+    }
+    .logoContainer{
+        top:60%
+    }
+    .helpText{
+        top: 78%;
+        width: 250px;
+    }
 }

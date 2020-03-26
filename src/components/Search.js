@@ -4,9 +4,15 @@ import { debounce } from 'lodash';
 
 import SearchPageStyles from '../styles/search-page.module.css'
 import SearchBar from "./SearchBar";
-import Results from './Results'
-import ResultPage from './ResultPage'
+import Footer from "./Footer";
+import Results from './Results';
+import ResultPage from './ResultPage';
+import IntroModal from './IntroModal';
 
+import helpText from "../data/helpText.json";
+
+import logo from "../assets/images/logo.png"
+import placy from "../assets/images/placy-logo.png"
 const local_endpoint = 'http://localhost:8000';
 const public_endpoint = '';
 
@@ -21,12 +27,25 @@ class Search extends Component{
             query : '',
             accessToken: '',
             tracks : [],
-            loading: true
+            loading: true,
+            rand: 1,
+            show: false
         }
         this._handleInputChange = this._handleInputChange.bind(this);
     }
 
+    showModal = () => {
+        this.setState({ show: true });
+    };
+    
+    hideModal = () => {
+    this.setState({ show: false });
+    };
+
+
     componentDidMount(){
+        const rand = Math.floor(Math.random() * (3)) + 1;
+        this.setState({rand})
         fetch(window.location.href.includes('localhost')?local_endpoint:public_endpoint)
         .then( res => { 
             return res.json()
@@ -63,17 +82,24 @@ class Search extends Component{
 
     render(){
         return(
-            <div className={SearchPageStyles.content}>
+            <div className={this.state.rand===1? 
+                             SearchPageStyles.contentA
+                            :this.state.rand===2? 
+                             SearchPageStyles.contentB
+                            :SearchPageStyles.contentC}>
                 {this.props.changed?
                 <ResultPage
                  code = {this.props.code}
                 />
                 :
-                <div
-                    className = {SearchPageStyles.container}
-                >
+                <div className = {SearchPageStyles.container}>
                     <div className={SearchPageStyles.search}>
-                        <h1 className={SearchPageStyles.header}>Placy Search</h1>
+                        <div className={SearchPageStyles.logoContainer}>
+                            <img src={logo} alt="Urban Rhythm Guide"></img>
+                        </div>
+                        <div className={SearchPageStyles.helpText}>
+                            {helpText.text}
+                        </div>
                         <SearchBar
                             handleInputChange = {this._handleInputChange}
                             query = {this.state.query}
@@ -92,16 +118,27 @@ class Search extends Component{
                         this.state.isLoggedIn? 
                         null
                     :
-                        <button 
-                        onClick={() => {window.location = window.location.href.includes('localhost') 
-                                                        ? local_endpoint + '/login' 
-                                                        : public_endpoint  + '/login'}}
-                        className={SearchPageStyles.loginButton}
-                        >
-                            Sign in with Spotify
-                        </button>
+
+                        <div>
+                            <p className={SearchPageStyles.or}>OR</p>
+                            <button 
+                            onClick={() => {window.location = window.location.href.includes('localhost') 
+                                                            ? local_endpoint + '/login' 
+                                                            : public_endpoint  + '/login'}}
+                            className={SearchPageStyles.loginButton}
+                            >
+                                Sign in with Spotify
+                            </button>
+                        </div>
                     }
-                    
+                    <IntroModal
+                        show={this.state.show} 
+                        handleClose={this.hideModal}>
+
+                    </IntroModal>
+                    <img src={placy} className={SearchPageStyles.placyLogo} alt="Placy"/>
+                    <div className={SearchPageStyles.info} onClick={this.showModal}>i</div>
+                    <Footer/>
                 </div>
                 }
             </div>

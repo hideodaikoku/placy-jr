@@ -27,6 +27,7 @@
 .noResult{
     display: none;
 }
+
 .trackText{
     margin:0;
 }
@@ -34,4 +35,15 @@
 .resultContainer:hover{
     background-color:rgb(237, 236, 236);
     cursor: pointer;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px){
+    .resultsContainer{
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        justify-content: center;
+    }
 }

@@ -1,17 +1,18 @@
 import React, {Component} from "react";
 import queryString from 'query-string';
-import Loading from './Loading';
-import { Link } from 'react-router-dom';
+import ResultPage from './ResultPage';
 
+const local_rec_endpoint = 'http://0.0.0.0:5000';
+const public_rec_endpoint = '';
 
 class User extends Component{
     constructor(){
         super()
         this.state = {
             topTrack: {},
-            loading: true,
             features: null,
-            artistName: ''
+            artistName: '',
+            found: false
         }
     }
 
@@ -28,16 +29,11 @@ class User extends Component{
                 response.json()
                 )
             .then(json => {
-                if(json.items[0]){
+                if(json.items){
                     this.setState({
-                        found: true,
                         topTrack : json.items[0],
                         artistName: json.items[0].artists[0].name,
                         id: json.items[0].id
-                    })
-                }else{
-                    this.setState({
-                        found: false
                     })
                 }
             })
@@ -62,12 +58,40 @@ class User extends Component{
                         tempo: json.tempo
                     }
                     this.setState({
-                        loading: false,
                         features
-                        
                     })
                  }
                 )
+                .then(()=>{
+                    const endpoint = window.location.href.includes('localhost') ? local_rec_endpoint : public_rec_endpoint;
+                    const features  = this.state.features;
+                    let mode = 0;
+                    if(features.mode){
+                        mode= features.mode
+                    }
+                    const URI = endpoint 
+                                +'?danceability='+features.danceability
+                                +'&energy='+features.energy
+                                +'&instrumentalness='+features.instrumentalness
+                                +'&liveness='+features.liveness
+                                +'&mode='+mode
+                                +'&speechiness='+features.speechiness
+                                +'&tempo='+features.tempo
+                                +'&valence='+features.valence;
+                    fetch(URI, {
+                        method: 'GET',
+                        headers: {
+                            'Access-Control-Allow-Origin': '*'
+                        }
+                    })
+                    .then(response=>response.json())
+                    .then(data=>this.setState({
+                        code: data.places,
+                        found: true
+                    })
+                    )
+                    .catch(err=>console.log(err))
+                })
                 .catch(error=>
                     console.log(error.message)
                 )
@@ -75,38 +99,14 @@ class User extends Component{
     }
 
     render(){
-        const features = this.state.features;
         return(
-            <div style={{margin:"5rem auto", maxWidth: "600px"}}>
+            <div>
             {
                 this.state.found ?
-                <div>
-                    <h1>{this.state.topTrack.name}</h1>
-                    <p>{this.state.artistName}</p>
-                    {
-                        this.state.loading?
-                        <Loading/>
-                        :
-                        <ul>
-                            <li>Danceability: {features.danceability}</li>
-                            <li>Energy: {features.energy}</li>
-                            <li>Loudness: {features.loundess}</li>
-                            <li>Speechiness: {features.speechiness}</li>
-                            <li>Accousticness: {features.accousticness}</li>
-                            <li>Instrumentalness: {features.instrumentalness}</li>
-                            <li>Liveness: {features.liveness}</li>
-                            <li>Valence: {features.valence}</li>
-                            <li>Tempo: {features.tempo}</li>
-                        </ul>
-                    }
-                </div>
-                :
-                <div>
-                    <h1>Track not found</h1>
-                        <Link to="/">
-                            Back
-                        </Link>
-                </div>
+                <ResultPage
+                code = {this.state.code}
+                />
+                :null
                 }
                 
             </div>

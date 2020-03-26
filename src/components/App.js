@@ -43,8 +43,7 @@ export default class App extends Component {
                     tempo: json.tempo
                 }
                 this.setState({
-                    features,
-                    changed: true
+                    features
                 })
                 }
             )
@@ -68,7 +67,9 @@ export default class App extends Component {
                 })
                 .then(response=>response.json())
                 .then(data=>this.setState({
-                    code:data.places})
+                    code:data.places,
+                    changed: true
+                })
                 )
                 .catch(err=>console.log(err))
             })

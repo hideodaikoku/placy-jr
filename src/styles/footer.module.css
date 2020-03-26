@@ -1,0 +1,11 @@
+.container{
+    position: absolute;
+    bottom: 1rem;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.image{
+    width: 5rem;
+    margin: 1rem;
+}

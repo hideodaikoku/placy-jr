@@ -2,6 +2,34 @@
     height: 2.5rem;
     border: none;
     padding: 2px 10px;
-    width: 600px;
+    width: 100%;
     margin-top: 1rem;
+    /* box-shadow: 0px 3px 10px #2b2828bb; */
+}
+
+.container{
+    width: 600px;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+      width: 75%;
+      margin: -3rem auto; 
+      justify-content: center; 
+    }
+    .input{
+      height: 2.2rem;
+    }
+}
+
+@media only screen and (max-width:600px){
+  .container{
+    margin-top:3rem;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  .container{
+    margin-top: 9rem;
+  }
 }
