@@ -14,7 +14,7 @@ import helpText from "../data/helpText.json";
 import logo from "../assets/images/logo.png"
 import placy from "../assets/images/placy-logo.png"
 const local_endpoint = 'http://localhost:8000';
-const public_endpoint = '';
+const public_endpoint = 'https://boiling-garden-91117.herokuapp.com/';
 
 
 const rate_limit = 10;

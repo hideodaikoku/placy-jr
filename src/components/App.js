@@ -4,7 +4,7 @@ import Search from './Search'
 import User from './User'
 
 const local_endpoint = 'http://localhost:8000';
-const public_endpoint = '';
+const public_endpoint = 'https://boiling-garden-91117.herokuapp.com/';
 
 const local_rec_endpoint = 'http://0.0.0.0:5000';
 const public_rec_endpoint = '';
