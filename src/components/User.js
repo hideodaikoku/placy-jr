@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import queryString from 'query-string';
 import ResultPage from './ResultPage';
+import Error from './Error';
 
 const local_rec_endpoint = 'http://0.0.0.0:5000';
 const public_rec_endpoint = '';
@@ -12,7 +13,8 @@ class User extends Component{
             topTrack: {},
             features: null,
             artistName: '',
-            found: false
+            found: false,
+            noTracks: false
         }
     }
 
@@ -29,11 +31,15 @@ class User extends Component{
                 response.json()
                 )
             .then(json => {
-                if(json.items){
+                if(json.items.length>0){
                     this.setState({
                         topTrack : json.items[0],
                         artistName: json.items[0].artists[0].name,
                         id: json.items[0].id
+                    })
+                }else{
+                    this.setState({
+                        noTracks: true
                     })
                 }
             })
@@ -106,7 +112,7 @@ class User extends Component{
                 <ResultPage
                 code = {this.state.code}
                 />
-                :null
+                :<Error/>
                 }
                 
             </div>
