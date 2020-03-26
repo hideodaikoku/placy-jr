@@ -6,6 +6,9 @@ import User from './User'
 const local_endpoint = 'http://localhost:8000';
 const public_endpoint = '';
 
+const local_rec_endpoint = 'http://0.0.0.0:5000';
+const public_rec_endpoint = '';
+
 export default class App extends Component {
 
     constructor(){
@@ -13,7 +16,8 @@ export default class App extends Component {
         this.state = {
             features : {},
             accessToken: '',
-            changed: false
+            changed: false,
+            code: 0
         }
         this.selectTrack_=this.selectTrack_.bind(this);
     }
@@ -35,6 +39,7 @@ export default class App extends Component {
                     instrumentalness: json.instrumentalness,
                     liveness: json.liveness,
                     valence: json.valence,
+                    mode : json.mode,
                     tempo: json.tempo
                 }
                 this.setState({
@@ -43,6 +48,30 @@ export default class App extends Component {
                 })
                 }
             )
+            .then(()=>{
+                const endpoint = window.location.href.includes('localhost') ? local_rec_endpoint : public_rec_endpoint;
+                const features  = this.state.features;
+                const URI = endpoint 
+                            +'?danceability='+features.danceability
+                            +'&energy='+features.energy
+                            +'&instrumentalness='+features.instrumentalness
+                            +'&liveness='+features.liveness
+                            +'&mode='+features.mode
+                            +'&speechiness='+features.speechiness
+                            +'&tempo='+features.tempo
+                            +'&valence='+features.valence;
+                fetch(URI, {
+                    method: 'GET',
+                    headers: {
+                        'Access-Control-Allow-Origin': '*'
+                    }
+                })
+                .then(response=>response.json())
+                .then(data=>this.setState({
+                    code:data.places})
+                )
+                .catch(err=>console.log(err))
+            })
             .catch(error=>
                 console.log(error.message)
             )
@@ -71,7 +100,7 @@ export default class App extends Component {
                     <Route path="/">
                         <Search
                         _selectTrack = {(id)=>this.selectTrack_(id)}
-                        features={this.state.features}
+                        code={this.state.code}
                         changed={this.state.changed}
                         />
                     </Route>

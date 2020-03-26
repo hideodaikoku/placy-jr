@@ -9,6 +9,8 @@ import ResultPage from './ResultPage'
 
 const local_endpoint = 'http://localhost:8000';
 const public_endpoint = '';
+
+
 const rate_limit = 10;
 class Search extends Component{
     
@@ -64,7 +66,7 @@ class Search extends Component{
             <div className={SearchPageStyles.content}>
                 {this.props.changed?
                 <ResultPage
-                 features = {this.props.features}
+                 code = {this.props.code}
                 />
                 :
                 <div

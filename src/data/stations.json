@@ -1,0 +1,152 @@
+[
+ {
+   "station_id": 1,
+   "station_name": "Akihabara",
+   "desc": "Akihabara is the heart of Japanese pop culture and a central district for video games, anime, manga and electronics. It was nicknamed Electric Town after WWII as a major shopping center for electronic goods; and the industry is so significant here that the local Kanda Myojin Shrine sells charms for success in IT business, shaped as data chips.\nIts famous cafe scene includes animal, maid, butler, idol group and video game themed cafes. Akihabara has grown quite tall, so be sure to check out the higher floors of buildings for hidden gems."
+ },
+ {
+   "station_id": 2,
+   "station_name": "Ebisu",
+   "desc": "Ebisu, named after a local Beer brand and a Japanese God of Fortune, has evolved into an affluent business district, home to international firms; alongside a high concentration of izakaya, ramen shops, restaurants and cafés.\nEbisu is home to a Museum of Photography and a local beer Museum which serves an array of local beers on tap, under its majestic arched ceiling.\nAn unexpectedly relaxed area, with a diverse array of dining and entertainment options, Ebisu is certain to delight."
+ },
+ {
+   "station_id": 3,
+   "station_name": "Gotanda",
+   "desc": "Gotanda is a quiet residential area populated with small shrines, temples, a national Design Center and a Museum of Contemporary Art. The area is dotted with atmospheric bars and affordable restaurants to service the nearby corporate offices. Gotanda Station’s west side is a great place to view cherry blossoms in spring along the Meguro river and avoid the heavy crowds."
+ },
+ {
+   "station_id": 4,
+   "station_name": "Hamamatsuchō",
+   "desc": "The Hamamatsucho district is a bustling commercial ward, providing access to the Tokyo Bay area and Odaiba. A short walk from Hamamatsucho station, the famed 17th century Hamarikyu Gardens offer views among pine trees of flower gardens and autumn leaves; and a traditional tea house, perched at the centre of an idyllic pond. The nearby Kyu Shiba Rikyu Gardens, built on Edo era Imperial Grounds, are considered to be among the most beautiful in Japan, and are scattered with bridges, islands, a waterfall and beach."
+ },
+ {
+   "station_id": 5,
+   "station_name": "Harajuku",
+   "desc": "Beyond the famous Harajuku station lie the Meiji shrine’s historic gardens, dedicated to the influential 19th century emperor of the same name; and Yoyogi Park, offering an escape from the hustle and bustle of Japan’s fashion capital.\nBeing synonymous with Japanese fashion culture, Harajuku encompasses Takeshita-street, the lively centre of youth fashion; and Omotesando’s tree lined streets, which are home to global designer brands, housed in breathtaking contemporary architecture."
+ },
+ {
+   "station_id": 6,
+   "station_name": "Ikebukuro",
+   "desc": "Ikebukuro is known for its blend of modern and traditional culture, electronics, anime and shopping. This smaller rival to Akihabara is home to Otome road; dotted with butler cafe, independent and large manga publishers. One of Japan’s best shopping malls, in Ikebukuro, home to an aquarium, observation deck, a luxury hotel and an amusement park among others.To the station’s west, a series of theatres and a concert hall are housed in a national art center, where street performers can often be seen entertaining delighted crowds"
+ },
+ {
+   "station_id": 7,
+   "station_name": "Kanda",
+   "desc": "Kanda station is surrounded is a short walk from Tokyo’s Imperial Palace and Tokyo station. Its high rise corporate buildings are contrasted by an array of independent clothing shops, international restaurants and arcade bars, all on the underside of atmospheric arched rail bridges.\nA major cultural destination in Kanda is the nearby Hongo Dori houses shops selling genuine Japanese katana, armor and traditional clothing."
+ },
+ {
+   "station_id": 8,
+   "station_name": "Komagome",
+   "desc": "As one of Tokyo’s quieter residential areas, Komagome doesn’t attract huge crowds, but is home to two of Tokyo‘s profoundly beautiful destinations, the Rikugien and the Kyu Furukawa gardens. With its hand crafted hills, forested areas, bridges and stone lanterns, Rikugien is among the most scenic locations in the city. The equally alluring Kyu Furukawa Garden houses an English country manor, overlooking an array of exquisite, natural Japanese gardens.\nPopular among photography enthusiasts, Komagome’s gardens are a perfect respite from the hustle and bustle of central Tokyo."
+ },
+ {
+   "station_id": 9,
+   "station_name": "Meguro",
+   "desc": "Meguro is more relaxed than its neighbour Ebisu; and is home to a huge range of museums, parks and foreign embassies. There are many museums including photography, art, and a theare, all ideal destinations for curious travelers.\nNearby Nakameguro’s riverside cafes, wine bars, and abundance of cherry blossom trees are not to be missed for those seeking respite from the bustling areas that surround this idyllic district."
+ },
+ {
+   "station_id": 10,
+   "station_name": "Mejiro",
+   "desc": "A wealthy residential area, Mejiro offers a refreshing break from many of the more famous areas of Tokyo. The area has historically been home to Japanese aristocracy and government officials, with its central hill housing Edo era feudal lords. The surrounding area is now home to high class residences and the picturesque Mejiro gardens.\nThe nearby shopping street offers an array of affordable shops, restaurants and bars. Mejiro is a small and relaxed area, perfect for a relaxed day of exploration."
+ },
+ {
+   "station_id": 11,
+   "station_name": "Nippori",
+   "desc": "Nippori balances traditional Japanese life with its modern city surroundings. Among the concrete laden station area, you’ll find centuries old family businesses and period wooden houses.The Yanaka neighbourhood is the place to go to see cats if you're lucky; and for cat themed goods. South of the station is Tennoji temple and Yanaka cemetery, the burial site of the last Tokugawa shogun; and to the station’s east you'll find Nippori Textile Town. Sando road that runs through Yanaka cemetery is popular for its density of cherry blossom trees."
+ },
+ {
+   "station_id": 12,
+   "station_name": "Nishi-Nippori",
+   "desc": "Nishi-Nippori offers a more sentimental and understated experience of Tokyo’s quiet side. It is noteworthy for its many peaceful walks, through beautiful and respectfully designed historic cemeteries; with a series of burial mounds and cemeteries leading all the way to Ueno. Leaving the station, the nearby Suwa shrine, founded around the year 1200 and neighbouring Nishi-Nippori Park offer a peaceful local experience not often found in bustling Tokyo."
+ },
+ {
+   "station_id": 13,
+   "station_name": "Okachimachi",
+   "desc": "Okachimachi is a densely packed destination for both locals and tourists alike. The track side street market running from Okachimachi station to Ueno started out as a post war black market and has now become a hub for cheap foods and old school haggling. One of the famous areas is the local street market, known for its fast talking candy vendors and international food stalls. Having evolved from its original meaning of “respectfully walking town,” Okachimachi is sure to offer a lively and bustling adventure."
+ },
+ {
+   "station_id": 14,
+   "station_name": "Ōsaki",
+   "desc": "Osaki has a laid back atmosphere, removed from the usual Tokyo hustle and bustle and has been gaining popularity over the past few years, since the Saikyo, Shonan-Shinjuku and Rinkai lines were added.\nConnected to the station, a large development houses a mall and art museum, with rotating contemporary exhibits; and an architecturally impressive adjacent development with two mixed residential and commercial towers. Also be sure to visit the other nearby mall with its elegant gardens bordered by restaurants and rooftop plaza with views of Tokyo Bay."
+ },
+ {
+   "station_id": 15,
+   "station_name": "Ōtsuka",
+   "desc": "The quaint Otsuka station and surrounding area have the vibe of traditional downtown Tokyo and Gokoku-ji temple, built in the 1600s, is known as one of Tokyo’s only surviving temples from this era. \nBe sure to visit the many famous seafood, onigiri and yakitori restaurants scattered throughout the neighbourhood; and after sightseeing and restaurant hopping, transfer from Otsuka-ekimae for a nostalgic trip heading toward either Waseda or Minowabashi"
+ },
+ {
+   "station_id": 16,
+   "station_name": "Shibuya",
+   "desc": "Shibuya is the vibrant core of Japan’s modern image, home to the world famous Scramble Crossing and its massive LED advertisements, the newly developed Scramble Square and the beloved Hachiko statue. Behind its flashy exterior, Shibuya is home to many more relaxed restaurants and cultural sites. Be sure to visit destinations such as the local cultural museum, the new national theatre and Konno Hachimangu Shrine, once the home of the Shibuya family, for which the area is believed to be named."
+ },
+ {
+   "station_id": 17,
+   "station_name": "Shimbashi",
+   "desc": "The bustling Shimbashi, or ‘New Bridge,’ area is dotted with the offices of Japanese and foreign companies and offers seemingly limitless dining and entertainment options catering to its resident workers. The station itself is within walking distance to the Hamarikyu Gardens, the famed Ginza shopping district. Be sure to explore the vibrant surroundings of Tokyo’s first rail terminal."
+ },
+ {
+   "station_id": 18,
+   "station_name": "Shin-Ōkubo",
+   "desc": "Shin-Okubo is sometimes likened to a Korean themed Akihabara, with its extensive offering of Korean cuisine and Hallyu culture. Situated near the station, Okubo-dori is a shopping street dotted with Korean clothing outlets, pop-culture and restaurants serving kimchi, Korean barbecue, bibimbap and much more. Shin-Okubo also has many unique entertainment options, from K-pop cafes to Korean themed clubs and bars."
+ },
+ {
+   "station_id": 19,
+   "station_name": "Shinagawa",
+   "desc": "One of Tokyo's busiest rail hubs, Shinagawa was important in the early 1600s as the first of fifty-three post towns along the Tokaido route. Tokyo’s expanding city center eventually enveloped Shinagawa and the area is now home to an array of shopping malls, food and entertainment options. The station’s east side is populated by modern buildings and corporate offices; and nestled beneath the train tracks you’ll find famous local Ramen and Donburi street offering a range of affordable meals."
+ },
+ {
+   "station_id": 20,
+   "station_name": "Shinjuku",
+   "desc": "As the world’s busiest station, Shinjuku transits one of the highest numbers of commuters in the world every day and is surrounded by bustling underground shopping malls and a vibrant station exit, lined with promoters and live music performers. West of the station is Shinjuku's Metropolitan Government Office and its free observation deck; while evening visitors head to Golden-Gai, lined with improbably small bars at the core of Kabuki-cho, Tokyo’s largest red light district. Once the estate of a feudal lord, the nearby Shinjuku Gyoen National Garden is the perfect escape from the bustling streets, after seeing the sights."
+ },
+ {
+   "station_id": 21,
+   "station_name": "Sugamo",
+   "desc": "Sometimes affectionately called “Grandma’s Harajuku,” Sugamo offers a great shopping experience to eldery folks; selling its famous red clothing, green tea, and traditional Japanese sweets in Sugamo Jizo Dori. Though the majority of the visiors are eldery, tranquil and friendly atmosphere of Sugamo would certainly offers an delightful experince to younger generations and international visitors."
+ },
+ {
+   "station_id": 22,
+   "station_name": "Tabata",
+   "desc": "Tabata is a small haven for those seeking Tokyo’s literary and artistic history. The area was once brimming with artisans and writers, as an affordable rural village within walking distance to Tokyo’s original School of Fine Arts. You can now learn about this era at a nearby memorial museum of writers and artists, a short walk from the station. It features works from some of Japan’s most renowned wordsmiths, artists and sculptors."
+ },
+ {
+   "station_id": 23,
+   "station_name": "Takadanobaba",
+   "desc": "Often simply referred to as ‘Baba,’ Takadanobaba was established in 1636 as the favourite horse riding location of Tokugawa shogun Iemitsu. The area is also famous for being the birthplace of a popular retro manga character. The area is also home to a number of universities and vocational schools, punctuated by a large entertainment centre that houses an arcade, bookstore, shopping and restaurants."
+ },
+ {
+   "station_id": 24,
+   "station_name": "Takanawa Gateway",
+   "desc": "Takanawa Gateway is the Yamanote’s newest addition, located between Shinagawa and Tamachi stations. The west side of this modern station is a great place to visit traditional Japanese temples and Shrines, which includes Sengaku-ji and Takanawa Shrine. Also, be sure to visit the nearby Shibaura Chuo Park, with its beautiful rose gardens; as well as Shinagawa Season Terrace for its panoramic views of Tokyo."
+ },
+ {
+   "station_id": 25,
+   "station_name": "Tamachi",
+   "desc": "Tamachi was established around 1900 on land reclaimed from Tokyo bay. Despite being part of Minato, one of Tokyo’s main business districts, the area around Tamachi station is relatively modest and reserved, being home to local cafes and soba shops amongst a quiet residential area. The north side of the station is lined with impressively compact bars and restaurants, that offers a great blend of university students and salarymans."
+ },
+ {
+   "station_id": 26,
+   "station_name": "Tokyo",
+   "desc": "Tokyo station is located at the heart of Japan’s financial and business district. Surrounded by the glass monoliths of global corporations and shopping malls, the station is just a short walk to the nation's Imperial Palace, with its tranquil gardens and Edo era stone architecture. Be sure to explore the station’s surroundings for a plethora of world class yet discreet dining and shopping options."
+ },
+ {
+   "station_id": 27,
+   "station_name": "Ueno",
+   "desc": "Best known for Ueno Park and Japan’s oldest zoo, Ueno was once a working class area that surrounded a grand temple complex, whose ruins lay near the sole surviving Kaneiji Temple. Running alongside the train line between Ueno and Okachimachi stations is the famous local street market; and surrounding the park and train station are an array of museums. These include the National Museum, a museum of western art, nature and science, an art museum and the Royal Museum."
+ },
+ {
+   "station_id": 28,
+   "station_name": "Uguisudani",
+   "desc": "Uguisudani Station is named for the many Japanese bush warblers, or uguisu, that once lived here and sits at the north end of Ueno Park. It is a relatively crowd-free place to view cherry blossoms in spring. To the east side of the station is the great place to enjoy Japanese Onsen, which are the favourite destination for local residents and students from the surrounding university."
+ },
+ {
+   "station_id": 29,
+   "station_name": "Yoyogi",
+   "desc": "Though located just within 10min walk away from one of the Tokyo's busiest station Shinjuku, Yoyogi provides quite a laid back atmosphere. Leaving the station, nearby Meiji Jingū commemorates Japan’s 19th century modernisation and is named for emperor Meiji, who initiated this era of rapid development. When you are around, be sure to venture into the surrounding area for a glimpse of high class residential life and to experience a range of local restaurants and cafes."
+ },
+ {
+   "station_id": 30,
+   "station_name": "Yūrakuchō",
+   "desc": "Yūrakuchō offers a fleeting insight into Japan’s early postwar lifestyle, in contrast with its more modern neighbour Ginza; and encompasses the Hibiya district, where the tranquil Hibiya Park offers respite to weary office workers. Beneath the rail line near Yūrakuchō station you’ll find izakayas, restaurants and outdoor food stalls, with offerings to suit any taste. The area is also home to more than seven theaters and convention centres; and within a two block walk you will reach Tokyo’s beautiful Imperial Palace estate."
+ }
+]
