@@ -71,6 +71,9 @@
     transform: translate(-50%,-50%);
 }
 
+.logoContainer img{
+    width: 240px
+}
 .helpText{
     position: absolute;
     text-align: center;
