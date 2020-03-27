@@ -13,3 +13,12 @@
 #tokyo{
     width: 6rem;
 }
+
+@media only screen and (max-width: 500px){
+    .image{
+        width: 3rem;
+    }
+    #tokyo{
+        width: 4rem;
+    }
+}
