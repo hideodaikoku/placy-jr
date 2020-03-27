@@ -74,8 +74,11 @@ export default class ResultPage extends Component {
                                 <p className={ResultPageStyles.clubName}>{bar.club_name_en}</p>
                             </div>
                             
+                            
                             <div className={ResultPageStyles.barImage}>
+                            <a href={bar.google_map_url} target="blank" rel="noopener noreferrer">
                                 <img src={image_hosting_endpoint+bar.place_id+'.png'} alt={bar.clubName}/>
+                            </a>
                             </div>
                             
                             <ul>
