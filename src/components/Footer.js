@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import FooterStyles from "../styles/footer.module.css";
 import jr from "../assets/images/jr.png";
-import tokyo from "../assets/images/tokyo.jpg";
+import tokyo from "../assets/images/tokyo.png";
 
 export default class Footer extends Component{
     render(){
