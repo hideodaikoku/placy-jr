@@ -13,7 +13,7 @@ class User extends Component{
             topTrack: {},
             features: null,
             artistName: '',
-            found: false,
+            loading: true,
             noTracks: false
         }
     }
@@ -93,7 +93,7 @@ class User extends Component{
                     .then(response=>response.json())
                     .then(data=>this.setState({
                         code: data.places,
-                        found: true
+                        loading: false
                     })
                     )
                     .catch(err=>console.log(err))
@@ -108,11 +108,15 @@ class User extends Component{
         return(
             <div>
             {
-                this.state.found ?
-                <ResultPage
+                this.state.noTracks?
+                <Error/>
+                :this.state.loading ?
+                <div style={{maxWidth:"300px",margin:"5rem auto"}}>
+                    <p>Loading...</p>
+                </div>
+                :<ResultPage
                 code = {this.state.code}
                 />
-                :<Error/>
                 }
                 
             </div>
