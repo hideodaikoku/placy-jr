@@ -1,4 +1,4 @@
-.contentA{
+.content{
     background-image: url('../assets/backgrounds/1.png');
     background-repeat: no-repeat;
     background-attachment: fixed; 
@@ -6,27 +6,7 @@
     height: 100vh;
     margin: 0;
     position: relative;
-}   
-
-.contentB{
-    background-image: url('../assets/backgrounds/2.png');    
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    position: relative;
-}
-
-.contentC{
-    background-image: url('../assets/backgrounds/3.png');    
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    position: relative;
-}
+} 
 
 .container{
     max-width: 600px;

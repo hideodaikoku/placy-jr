@@ -44,8 +44,6 @@ class Search extends Component{
 
 
     componentDidMount(){
-        const rand = Math.floor(Math.random() * (3)) + 1;
-        this.setState({rand})
         fetch(window.location.href.includes('localhost')?local_endpoint:public_endpoint)
         .then( res => { 
             return res.json()
@@ -82,11 +80,7 @@ class Search extends Component{
 
     render(){
         return(
-            <div className={this.state.rand===1? 
-                             SearchPageStyles.contentA
-                            :this.state.rand===2? 
-                             SearchPageStyles.contentB
-                            :SearchPageStyles.contentC}>
+            <div className={SearchPageStyles.content}>
                 {this.props.changed?
                 <ResultPage
                  code = {this.props.code}

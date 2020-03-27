@@ -8,7 +8,7 @@ export default class Footer extends Component{
         return(
             <div className={FooterStyles.container}>
                 <img src={jr} alt="Japan Railways" className={FooterStyles.image}/>
-                <img src={tokyo} alt="Tokyo Moving Round" className={FooterStyles.image}/>
+                <img src={tokyo} alt="Tokyo Moving Round" id={FooterStyles.tokyo}/>
             </div>
         )
     }
