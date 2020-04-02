@@ -4,7 +4,7 @@ import stationData from '../data/stations.json';
 import venueData from '../data/venue-info.json';
 import svgMap from "../data/svgMap.json";
 import Modal from "./Modal";
-
+import Loading from "./Loading"
 import queryString from 'query-string';
 
 const svg_hosting_endpoint = 'https://placy-jr-svg.s3-ap-northeast-1.amazonaws.com/';
@@ -18,17 +18,25 @@ export default class ResultPage extends Component {
             station_name: '',
             desc: '',
             bars: [],
-            show: false
+            show: false,
+            loading: true
         }
     }
 
     componentDidMount(){
+        setTimeout(()=>{
+            this.setState({
+                loading: false
+            })
+        }
+        ,2500)
         const place = venueData.filter(venue=>venue.place_id===this.props.code);
         const station_id = place[0].station_id;
         const station = stationData.filter(station=>station.station_id===station_id)[0];
         const bars = venueData.filter(venue=>venue.station_id===station_id)
         this.setState({
             station_name: station.station,
+            spotify_link: station.spotify_link,
             station_id,
             desc: station.description_en,
             bars: bars
@@ -56,13 +64,22 @@ export default class ResultPage extends Component {
         return(
             <div className={ResultPageStyles.parent}>
                 <div className={ResultPageStyles.container}>
-                    <h1 id={ResultPageStyles.arrow}
-                        onClick={this.refresh}>
-                            &#8592;
-                    </h1>
-                    <h1 id={ResultPageStyles.title}>{this.state.station_name}</h1>
+                    {
+                    this.state.loading?
+                    <Loading/>
+                    : null
+                    }
+                    <div className={ResultPageStyles.topContainer}>
+                        <h1 id={ResultPageStyles.arrow}
+                            onClick={this.refresh}>
+                                &#8592;
+                        </h1>
+                        <h1 id={ResultPageStyles.title}>{this.state.station_name}</h1>
+                    </div>
                     <p>{this.state.desc}</p>
-                    
+                    <a href={this.state.spotify_link} target="_blank" rel="noopener noreferrer" className={ResultPageStyles.playlist}>
+                        LISTEN ON SPOTIFY
+                    </a>
                     {
                     
                     this.state.bars.map((bar,idx)=>(
@@ -76,9 +93,9 @@ export default class ResultPage extends Component {
                             
                             
                             <div className={ResultPageStyles.barImage}>
-                            <a href={bar.google_map_url} target="blank" rel="noopener noreferrer">
+                            
                                 <img src={image_hosting_endpoint+bar.place_id+'.png'} alt={bar.clubName}/>
-                            </a>
+                           
                             </div>
                             
                             <ul>
@@ -88,16 +105,20 @@ export default class ResultPage extends Component {
                             <p className={ResultPageStyles.en}>{bar.description_en}</p>
                             
                             <p className={ResultPageStyles.ja}>{bar.description_ja}</p>
-                            
-                            <small className={ResultPageStyles.address}>{bar.address}</small><br/>
+
+                            <a href={bar.google_map_url} target="blank" rel="noopener noreferrer" className={ResultPageStyles.addressLink}>
+                                <small className={ResultPageStyles.address}>{bar.address}</small><br/>
+                            </a>
                         </div>
                     ))}
                 </div>
-                <img 
-                src={svg_hosting_endpoint+svgMap[this.state.station_id]} 
-                alt={this.state.station_name}
-                className={ResultPageStyles.image}
-                />
+                <div className={ResultPageStyles.imgContainer}>
+                    <img 
+                    src={svg_hosting_endpoint+svgMap[this.state.station_id]} 
+                    alt={this.state.station_name}
+                    className={ResultPageStyles.image}
+                    />
+                </div>
                 <Modal 
                     show={this.state.show} 
                     handleClose={this.hideModal}>

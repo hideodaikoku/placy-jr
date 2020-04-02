@@ -1,0 +1,47 @@
+.loadContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F4F1EC;
+    z-index: 999;
+}
+
+.loaderContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 20rem;
+}
+
+
+.text{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    display: flex;
+    font-family: roc grotesk;
+}
+
+.loader {
+    margin: 0 auto;
+    padding: 0;
+    border: .5rem solid #d7d7d7; /* Light grey */
+    border-top: .5rem solid gray; /* Blue */
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
