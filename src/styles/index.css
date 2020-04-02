@@ -14,3 +14,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p, small{
+  font-family: "Helvetica Neue", sans-serif, -apple-system;
+}
