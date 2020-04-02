@@ -12,7 +12,7 @@
   .modal-main-a{
     position:fixed;
     background: white;
-    width: 70%;
+    width: 50%;
     height: 45%;
     top:50%;
     left:50%;
@@ -90,4 +90,52 @@
       margin-right: auto;
       margin-top: 4rem;
   }
+ 
+  @media only screen and (max-width: 1200px){
+    .modal{
+      font-size: .9rem;
+      
+    }
+    .title, .title-ja{
+      margin-top: .5rem;
+    }
+    .para{
+      margin-bottom: 1rem;
+    }
+  }
 
+
+  .placy-logo{
+    width: 5rem;
+    margin-top: 1rem;
+    float: right;
+  }
+  
+
+  @media only screen and (max-width: 800px){
+    .modal-main-a{
+      padding: 1.5rem;
+      height: 60%;
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+    .title, .title-ja{
+      font-size: 1.1rem;
+    }
+
+    .text-jp{
+      margin-top: .5rem;
+      margin-bottom: 2rem;
+    }
+
+    .modal-main-a{
+      padding:2.5rem;
+      height: 70%;
+    }
+    
+    .close{
+      right: 1rem;
+    }
+
+  }
