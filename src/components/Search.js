@@ -130,9 +130,9 @@ class Search extends Component{
                         handleClose={this.hideModal}>
 
                     </IntroModal>
-                    <a href="https://placy.city/" target="_blank" rel="noopener noreferrer">
-                        <img src={placy} className={SearchPageStyles.placyLogo} alt="Placy Website"/>
-                    </a>
+                        <a href="https://placy.city/" target="_blank" rel="noopener noreferrer">
+                            <img src={placy} className={SearchPageStyles.placyLogo} alt="Placy Website"/>
+                        </a>
                     <div className={SearchPageStyles.info} onClick={this.showModal}>i</div>
                     <Footer/>
                 </div>
