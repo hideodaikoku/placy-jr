@@ -24,7 +24,7 @@
   .modal-main {
     position:fixed;
     background: white;
-    width: 70%;
+    width: 60%;
     height: 60%;
     top:50%;
     left:50%;
@@ -80,15 +80,15 @@
   .figure{
       float: right;
       width: 50%;
-      height: 100%;
-  }
-
-  .figure img{
-      display: block;
-      width: 85%;
       margin-left: auto;
       margin-right: auto;
       margin-top: 4rem;
+  }
+
+  .figure> img{
+      margin-left: auto;
+      display: block;
+      width: 80%;
   }
  
   @media only screen and (max-width: 1200px){
@@ -96,11 +96,30 @@
       font-size: .9rem;
       
     }
+    .modal-main{
+      width: 50%;
+    }
     .title, .title-ja{
       margin-top: .5rem;
     }
     .para{
       margin-bottom: 1rem;
+    }
+    .desc{
+      clear:left;
+      width: 100%;
+    }
+
+    .figure{
+      clear: right;
+      margin: 1rem auto;
+      transform: translateX(0%);
+      width: 100%;
+      height: 50%;
+    }
+
+    .figure>img{
+      margin: 0 auto;
     }
   }
 
@@ -116,6 +135,15 @@
     .modal-main-a{
       padding: 1.5rem;
       height: 60%;
+    }
+
+    .modal-main{
+      padding: 1.5rem;
+      height: 90%;
+      width: 50%;
+    }
+    .figure{
+      clear: both;
     }
   }
 
@@ -136,6 +164,13 @@
     
     .close{
       right: 1rem;
+    }
+
+    .figure{
+      height: 25%;
+    }
+    .figure>img{
+      width: 100%;
     }
 
   }
