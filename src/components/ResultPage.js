@@ -24,12 +24,18 @@ export default class ResultPage extends Component {
     }
 
     componentDidMount(){
-        setTimeout(()=>{
+        if(!this.props.hideLoading){
+            setTimeout(()=>{
+                this.setState({
+                    loading: false
+                })
+            }
+            ,2500)
+        }else{
             this.setState({
                 loading: false
             })
         }
-        ,2500)
         const place = venueData.filter(venue=>venue.place_id===this.props.code);
         const station_id = place[0].station_id;
         const station = stationData.filter(station=>station.station_id===station_id)[0];

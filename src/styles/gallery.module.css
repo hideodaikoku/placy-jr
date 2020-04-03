@@ -1,0 +1,108 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: relative;
+    background-color: #F4F1EC;
+} 
+
+.titleContainer{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 7rem;
+    background-color: #F4F1EC;
+    z-index: 999;
+}
+
+.stationName{
+    z-index: 0;
+}
+
+a.arrowLink{  
+    text-decoration: none;
+    color: black;
+}
+.image{
+    width: 90%;
+    cursor: pointer;
+    transition: transform .2s;
+
+}
+
+.image:hover{
+    opacity: 70%;
+    transform: scale(1.2);
+}
+#title{
+    padding: 0;
+    margin: 0 auto;
+    font-size: 2.6rem;
+    font-weight: 200;
+}
+
+#arrow{
+    font-size: 2.6rem;
+    font-weight: 200;
+    margin: 0 auto;
+    cursor: pointer;
+    margin: 0;
+}
+
+.gridContainer{
+    height: calc(100vh)-8rem;
+    margin: 8rem auto;
+    max-width: 600px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    grid-auto-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+  
+.grid::before {
+    content: '';
+    width: 0;
+    padding-bottom: 100%;
+    grid-row:   1 / 1;
+    grid-column: 1 / 1;
+}
+
+.grid > *:first-child {
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+}
+
+@media only screen and (max-width:560px){
+    .titleContainer{
+        width: 100%;
+    }
+
+    .gridContainer{
+        max-width: 450px;
+    }
+
+    #title, #arrow{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .titleContainer{
+        width: 100%;
+    }
+
+    .gridContainer{
+        max-width: 350px;
+    }
+
+    #title, #arrow{
+        max-width: 350px;
+    }
+}

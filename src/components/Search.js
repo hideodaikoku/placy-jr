@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import { debounce } from 'lodash';
-
+import {Link} from 'react-router-dom'
 
 import SearchPageStyles from '../styles/search-page.module.css'
 import SearchBar from "./SearchBar";
@@ -125,6 +125,9 @@ class Search extends Component{
                             </button>
                         </div>
                     }
+                    <Link to ="/gallery" className={SearchPageStyles.galleryLink}>
+                        Browse all stations
+                    </Link>
                     <IntroModal
                         show={this.state.show} 
                         handleClose={this.hideModal}>

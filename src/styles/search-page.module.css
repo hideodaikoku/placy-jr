@@ -45,6 +45,21 @@
     text-transform: uppercase;
 }
 
+.galleryLink{
+    position: absolute;
+    top:73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
 .logoContainer{
     position: absolute;
     top: 50%;
@@ -101,6 +116,9 @@
     .loginButton{
         top: 55%;
     }
+    .galleryLink{
+        top: 65%
+    }
     .helpText{
         font-size: .7rem;
         max-width: 500px;
@@ -118,6 +136,9 @@
         padding: .6rem;
         border-radius: 2rem;
     }
+    .galleryLink{
+        top: 75%
+    }
     .helpText{
         width: 400px;
         font-size: .9rem;
@@ -126,10 +147,15 @@
 
 @media only screen and (max-width: 375px){
     .loginButton{
-        top: 80%;
+        top: 75%;
         padding: .6rem;
         border-radius: 1.8rem;
         font-size: .6rem;
+    }
+
+    .galleryLink{
+        top: 85%;
+        font-size: .9rem;
     }
     .or{
         margin-top: 4rem;

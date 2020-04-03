@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Search from './Search'
 import User from './User'
+import Gallery from './Gallery'
 
 const local_endpoint = 'http://localhost:8000';
 const public_endpoint = 'https://boiling-garden-91117.herokuapp.com/';
@@ -20,6 +21,7 @@ export default class App extends Component {
             code: 0
         }
         this.selectTrack_=this.selectTrack_.bind(this);
+        this._selectStation = this._selectStation.bind(this)
     }
 
     getTrackData=(token, id)=>{
@@ -91,12 +93,25 @@ export default class App extends Component {
         .catch(err=>console.log(err.message))
     }
 
+    _selectStation(id){
+        this.setState({
+            changed:true,
+            code: id
+        })
+    }
     render(){
         return(
             <Router>
                 <Switch>
                     <Route path="/user">
                         <User/>
+                    </Route>
+                    <Route path="/gallery">
+                        <Gallery
+                         selectStation = {(id)=>this._selectStation(id)}
+                         code={this.state.code}
+                         changed={this.state.changed}
+                        />
                     </Route>
                     <Route path="/">
                         <Search
