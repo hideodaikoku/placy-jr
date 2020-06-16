@@ -5,10 +5,10 @@ import User from './User'
 import Gallery from './Gallery'
 
 const local_endpoint = 'http://localhost:8000';
-const public_endpoint = 'https://boiling-garden-91117.herokuapp.com/';
+const public_endpoint = 'https://master.df7pdxc0x15qw.amplifyapp.com';
 
 const local_rec_endpoint = 'http://0.0.0.0:5000';
-const public_rec_endpoint = 'https://boiling-beach-00069.herokuapp.com/';
+const public_rec_endpoint = 'placy-recommend-api.eba-p5xia2h9.ap-northeast-1.elasticbeanstalk.com';
 
 export default class App extends Component {
 
