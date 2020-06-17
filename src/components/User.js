@@ -4,7 +4,7 @@ import ResultPage from './ResultPage';
 import Error from './Error';
 
 const local_rec_endpoint = 'http://0.0.0.0:5000';
-const public_rec_endpoint = 'https://master.df7pdxc0x15qw.amplifyapp.com';
+const public_rec_endpoint = 'https://yamaha-spotify-auth.herokuapp.com/';
 
 class User extends Component{
     constructor(){

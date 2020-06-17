@@ -14,7 +14,7 @@ import helpText from "../data/helpText.json";
 import logo from "../assets/images/logo.png"
 import placy from "../assets/images/placy-logo.png"
 const local_endpoint = 'http://localhost:8000';
-const public_endpoint = 'https://master.df7pdxc0x15qw.amplifyapp.com';
+const public_endpoint = 'https://yamaha-spotify-auth.herokuapp.com/';
 
 
 const rate_limit = 10;
