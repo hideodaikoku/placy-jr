@@ -7,7 +7,7 @@ import Modal from "./Modal";
 import Loading from "./Loading"
 import queryString from 'query-string';
 
-const svg_hosting_endpoint = 'https://placy-jr-svg.s3-ap-northeast-1.amazonaws.com/';
+const svg_hosting_endpoint = 'https://urban-rhythm-guide.s3-ap-northeast-1.amazonaws.com';
 const image_hosting_endpoint = 'https://placy-jr.s3-ap-northeast-1.amazonaws.com/';
 
 export default class ResultPage extends Component {

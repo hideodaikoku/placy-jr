@@ -5,7 +5,7 @@ import User from './User'
 import Gallery from './Gallery'
 
 const local_endpoint = 'http://localhost:8000';
-const public_endpoint = 'http://boiling-garden-91117.herokuapp.com';
+const public_endpoint = 'http://ec2-54-249-70-139.ap-northeast-1.compute.amazonaws.com:8000';
 
 const local_rec_endpoint = 'http://0.0.0.0:5000';
 const public_rec_endpoint = 'https://boiling-beach-00069.herokuapp.com/';

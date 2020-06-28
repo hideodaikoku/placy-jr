@@ -14,7 +14,7 @@ import helpText from "../data/helpText.json";
 import logo from "../assets/images/logo.png"
 import placy from "../assets/images/placy-logo.png"
 const local_endpoint = 'http://localhost:8000';
-const public_endpoint = 'http://boiling-garden-91117.herokuapp.com';
+const public_endpoint = 'http://ec2-54-249-70-139.ap-northeast-1.compute.amazonaws.com:8000';
 
 
 const rate_limit = 10;

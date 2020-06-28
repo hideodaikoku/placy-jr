@@ -4,7 +4,7 @@ import ResultPage from './ResultPage';
 import Error from './Error';
 
 const local_rec_endpoint = 'http://0.0.0.0:5000';
-const public_rec_endpoint = 'https://boiling-beach-00069.herokuapp.com/';
+const public_rec_endpoint = 'http://ec2-54-249-70-139.ap-northeast-1.compute.amazonaws.com:8000';
 
 class User extends Component{
     constructor(){

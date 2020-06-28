@@ -5,7 +5,7 @@ import stationData from "../data/stations.json";
 import svgData from "../data/svgMap.json"
 import ResultPage from "./ResultPage"
 
-const svg_hosting_endpoint = 'https://placy-jr-svg.s3-ap-northeast-1.amazonaws.com/';
+const svg_hosting_endpoint = 'https://urban-rhythm-guide.s3-ap-northeast-1.amazonaws.com/';
 
 export default class Gallery extends Component{
     render(){
