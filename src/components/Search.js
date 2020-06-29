@@ -103,11 +103,13 @@ class Search extends Component{
                         />
                         {
                         this.state.tracks.length>0?
+                        <div className={SearchPageStyles.resultBox}>
                         <Results
                             selectTrack={(id)=>this.props._selectTrack(id)}
                             tracks={this.state.tracks}
                             query = {this.state.query}
                             />
+                        </div>
                         :null
                         }
                     </div>

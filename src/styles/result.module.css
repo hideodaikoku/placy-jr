@@ -3,7 +3,7 @@
     top: 100%;
     left: 0%;
     
-    width: 620px;
+    width: 560px;
     height: 220px;
 
     overflow-y: scroll;
@@ -38,10 +38,11 @@
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .resultsContainer{
-        width: 80%;
+        width: 90%;
         left: 50%;
+        top: -2rem;
         transform: translateX(-50%);
         margin: 0 auto;
         justify-content: center;
