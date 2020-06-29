@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import { debounce } from 'lodash';
 import {Link} from 'react-router-dom'
 
-import SearchPageStyles from '../styles/search-page.module.css'
+import SearchPageStyles from '../styles/search-page.module.scss'
 import SearchBar from "./SearchBar";
 import Footer from "./Footer";
 import Results from './Results';
@@ -94,6 +94,9 @@ class Search extends Component{
                         <div className={SearchPageStyles.helpText}>
                             {helpText.text}
                         </div>
+                        <div className={SearchPageStyles.textContainer}>
+                            <small>2020年3月現在の情報です</small>
+                        </div>
                         <SearchBar
                             handleInputChange = {this._handleInputChange}
                             query = {this.state.query}
@@ -113,7 +116,7 @@ class Search extends Component{
                         null
                     :
 
-                        <div>
+                        <div className={SearchPageStyles.loginContainer}>
                             <p className={SearchPageStyles.or}>OR</p>
                             <button 
                             onClick={() => {window.location = window.location.href.includes('localhost') 
@@ -125,17 +128,22 @@ class Search extends Component{
                             </button>
                         </div>
                     }
-                    <Link to ="/gallery" className={SearchPageStyles.galleryLink}>
-                        Browse all stations
-                    </Link>
+
+                    <div className={SearchPageStyles.browseContainer}>
+                        <Link to ="/gallery" className={SearchPageStyles.galleryLink}>
+                            Browse all stations
+                        </Link>
+                    </div>
+
+                    
                     <IntroModal
                         show={this.state.show} 
                         handleClose={this.hideModal}>
-
                     </IntroModal>
-                        <a href="https://placy.city/" target="_blank" rel="noopener noreferrer">
-                            <img src={placy} className={SearchPageStyles.placyLogo} alt="Placy Website"/>
-                        </a>
+                    <a href="https://placy.city/" target="_blank" rel="noopener noreferrer">
+                        <img src={placy} className={SearchPageStyles.placyLogo} alt="Placy Website"/>
+                    </a>
+                    
                     <div className={SearchPageStyles.info} onClick={this.showModal}>i</div>
                     <Footer/>
                 </div>
