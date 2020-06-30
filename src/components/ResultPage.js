@@ -36,6 +36,11 @@ export default class ResultPage extends Component {
                 loading: false
             })
         }
+
+        // the algorithm recommends a place using a "code"
+        // this code should correspond to a place id, however as it is implemented now
+        // the place_ids b/w recommender and front end data do not match exactly - they will however, be in the same station
+
         const place = venueData.filter(venue=>venue.place_id===this.props.code);
         const station_id = place[0].station_id;
         const station = stationData.filter(station=>station.station_id===station_id)[0];
