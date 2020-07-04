@@ -14,7 +14,7 @@ import helpText from "../data/helpText.json";
 import logo from "../assets/images/logo.png"
 import placy from "../assets/images/placy-logo.png"
 const local_endpoint = 'http://localhost:8000';
-const public_endpoint = 'https://ec2-54-199-27-87.ap-northeast-1.compute.amazonaws.com:8000';
+const public_endpoint = 'http://ec2-54-199-27-87.ap-northeast-1.compute.amazonaws.com:8000';
 
 
 const rate_limit = 10;
