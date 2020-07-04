@@ -4,7 +4,7 @@ import ResultPage from './ResultPage';
 import Error from './Error';
 
 const local_rec_endpoint = 'http://0.0.0.0:5000';
-const public_rec_endpoint = 'http://UrbanRhythmApp-env.eba-nhtydrjr.ap-northeast-1.elasticbeanstalk.com/';
+const public_rec_endpoint = 'http://UrbanRhythmRec-env.eba-v2serngr.ap-northeast-1.elasticbeanstalk.com';
 
 class User extends Component{
     constructor(){
