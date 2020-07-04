@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import queryString from 'query-string';
 import ResultPage from './ResultPage';
 import Error from './Error';
-
 const local_rec_endpoint = 'http://0.0.0.0:5000';
 const public_rec_endpoint = 'http://UrbanRhythmRec-env.eba-v2serngr.ap-northeast-1.elasticbeanstalk.com';
 
@@ -112,7 +111,7 @@ class User extends Component{
                 <Error/>
                 :this.state.loading ?
                 <div style={{maxWidth:"300px",margin:"5rem auto"}}>
-                    <p>Loading...</p>
+                    <></>
                 </div>
                 :<ResultPage
                 code = {this.state.code}
