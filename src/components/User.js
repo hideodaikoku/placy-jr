@@ -3,7 +3,7 @@ import queryString from 'query-string';
 import ResultPage from './ResultPage';
 import Error from './Error';
 const local_rec_endpoint = 'http://0.0.0.0:5000';
-const public_rec_endpoint = 'https://urban-recommender.placy.city';
+const public_rec_endpoint = 'https://api.urban-recommender.placy.city';
 
 class User extends Component{
     constructor(){

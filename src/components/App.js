@@ -8,7 +8,7 @@ const local_endpoint = 'http://localhost:8000';
 const public_endpoint = 'http://ec2-54-199-27-87.ap-northeast-1.compute.amazonaws.com:8000/';
 
 const local_rec_endpoint = 'http://0.0.0.0:5000';
-const public_rec_endpoint = 'https://urban-recommender.placy.city/';
+const public_rec_endpoint = 'https://api.urban-recommender.placy.city/';
 
 export default class App extends Component {
 
