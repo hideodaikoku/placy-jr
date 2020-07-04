@@ -8,7 +8,7 @@ const local_endpoint = 'http://localhost:8000';
 const public_endpoint = 'http://ec2-54-249-70-139.ap-northeast-1.compute.amazonaws.com:8000';
 
 const local_rec_endpoint = 'http://0.0.0.0:5000';
-const public_rec_endpoint = 'http://UrbanRhythmGuide-env.eba-id4wih5i.ap-northeast-1.elasticbeanstalk.com/';
+const public_rec_endpoint = 'http://UrbanRhythmApp-env.eba-nhtydrjr.ap-northeast-1.elasticbeanstalk.com/';
 
 export default class App extends Component {
 
