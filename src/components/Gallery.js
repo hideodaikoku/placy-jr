@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import {Link} from "react-router-dom";
 import galleryStyles from "../styles/gallery.module.css";
 import stationData from "../data/stations.json";
-import svgData from "../data/svgMap.json"
+import pngData from "../data/pngMap.json"
 import ResultPage from "./ResultPage"
 
 const svg_hosting_endpoint = 'https://urban-rhythm-guide.s3-ap-northeast-1.amazonaws.com/';
@@ -31,7 +31,7 @@ export default class Gallery extends Component{
                             {stationData.map(station=>(
                                 <div key={station.station_id} onClick={()=>this.props.selectStation(station.station_id)}>
                                     <img 
-                                        src={svg_hosting_endpoint+svgData[station.station_id]} 
+                                        src={svg_hosting_endpoint+pngData[station.station_id]} 
                                         alt={station.station}
                                         className={galleryStyles.image}    
                                     />

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ResultPageStyles from '../styles/resultpage.module.css';
 import stationData from '../data/stations.json';
 import venueData from '../data/venue-info.json';
-import svgMap from "../data/svgMap.json";
+import pngMap from "../data/pngMap.json";
 import Modal from "./Modal";
 import Loading from "./Loading"
 import queryString from 'query-string';
@@ -125,7 +125,7 @@ export default class ResultPage extends Component {
                 </div>
                 <div className={ResultPageStyles.imgContainer}>
                     <img 
-                    src={svg_hosting_endpoint+svgMap[this.state.station_id]} 
+                    src={svg_hosting_endpoint+pngMap[this.state.station_id]} 
                     alt={this.state.station_name}
                     className={ResultPageStyles.image}
                     />
