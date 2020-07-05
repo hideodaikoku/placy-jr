@@ -5,7 +5,7 @@ import User from './User'
 import Gallery from './Gallery'
 
 const local_endpoint = 'http://localhost:8000';
-const public_endpoint = 'https://ec2-54-199-27-87.ap-northeast-1.compute.amazonaws.com:8000/';
+const public_endpoint = 'https://api.urban-rhythm-back.placy.city/';
 
 const local_rec_endpoint = 'http://0.0.0.0:5000';
 const public_rec_endpoint = 'https://api.urban-recommender.placy.city/';
