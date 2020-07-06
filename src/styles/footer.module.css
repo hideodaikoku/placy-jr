@@ -1,13 +1,12 @@
 .container{
-    position: absolute;
-    bottom: 1rem;
-    margin: auto;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 8rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 .image{
     width: 5rem;
-    margin: 1rem;
+    margin: 0 auto;
 }
 
 #tokyo{
@@ -17,6 +16,24 @@
 @media only screen and (max-width: 500px){
     .image{
         width: 3rem;
+    }
+    #tokyo{
+        width: 4rem;
+    }
+}
+
+
+@media only screen and (max-height: 700px){
+    .container{
+        position: absolute;
+        height: 3rem;
+        bottom: 1.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+    .image{
+        width: 1rem;
     }
     #tokyo{
         width: 4rem;

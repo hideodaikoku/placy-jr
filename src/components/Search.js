@@ -147,9 +147,9 @@ class Search extends Component{
                     </a>
                     
                     <div className={SearchPageStyles.info} onClick={this.showModal}>i</div>
-                    <Footer/>
                 </div>
                 }
+                <Footer/>
             </div>
         )
 

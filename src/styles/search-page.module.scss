@@ -10,6 +10,8 @@
         max-width: 560px;
         margin: 0 auto;
         display: relative;
+        min-height: 100%;
+        margin-bottom: -8rem;
         .search{
             padding-top: 20vh;
             .logoContainer{
@@ -127,6 +129,37 @@
                 transform: translateX(-50%);
                 height: 1.5rem;
             }
+        }
+    }
+}
+
+@media only screen and (max-height: 700px){
+    .content{
+        .container{
+            margin-bottom: 0;
+            .search{
+                padding-top: 10vh;
+                .textContainer{
+                    margin-top: .5rem;
+                }
+            }
+            .placyLogo{
+                position: absolute;
+                top: 1rem
+            }
+            .info{
+               bottom: 1rem;
+            }
+            .loginContainer{
+                margin-top: .1vh;
+                .or{
+                    margin: .3rem auto;
+                }
+            }
+            .browseContainer{
+                margin-top: 1rem;
+            }
+            
         }
     }
 }
