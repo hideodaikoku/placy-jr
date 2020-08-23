@@ -6,6 +6,9 @@ import pngMap from "../data/pngMap.json";
 import Modal from "./Modal";
 import Loading from "./Loading"
 import queryString from 'query-string';
+import app_store from '../assets/images/app_store.png';
+import play_store from '../assets/images/play_store.png';
+import app_pr from '../assets/images/app_pr.png';
 
 const svg_hosting_endpoint = 'https://urban-rhythm-guide.s3-ap-northeast-1.amazonaws.com/';
 const image_hosting_endpoint = 'https://urban-rhythm-guide-venue.s3.ap-northeast-1.amazonaws.com/';
@@ -128,6 +131,19 @@ export default class ResultPage extends Component {
                                 </a>
                             </div>
                         ))}
+                        <h3 style={{fontWeight:300, padding: ".5rem", marginTop: "3rem", fontSize:"2rem"}}>Looking for more places? <br/>Download the app.</h3>
+                        <div className={ResultPageStyles.badgeContainer}>
+                            <a href="https://play.google.com/store/apps/details?id=com.placy.placyapp" alt="Download on Google Play" className={ResultPageStyles.badgeLink}>
+                                <img className={ResultPageStyles.badge} src={play_store} alt="Download on Google Play">
+                                </img>
+                            </a>
+                            <a href="https://apps.apple.com/jp/app/placy/id1474567327" alt="Download on the App Store" className={ResultPageStyles.badgeLink}>
+                                <img className={ResultPageStyles.badge} src={app_store} alt="Download on the App Store">
+                                </img>
+                            </a>
+                        </div>
+                        <img className={ResultPageStyles.appPr} src={app_pr} alt="Follow Your Rhythm">
+                        </img>
                     </div>
                     <div className={ResultPageStyles.imgContainer}>
                         <img 

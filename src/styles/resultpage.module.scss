@@ -9,6 +9,19 @@
             position: relative;
             padding-left: 2rem;
             padding-right: 2rem;
+            .badgeContainer{
+                display:flex;
+                margin-bottom: 2rem;
+                .badgeLink{
+                    width: 50%;
+                    .badge{
+                        width:100%;
+                    }
+                }
+            }
+            .appPr{
+                width:100%;
+            }
             .topContainer{
                 position: absolute;
                 top: 0;

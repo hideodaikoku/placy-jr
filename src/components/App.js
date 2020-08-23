@@ -7,7 +7,7 @@ import Gallery from './Gallery'
 const local_endpoint = 'http://localhost:8000';
 const public_endpoint = 'https://api.urban-rhythm-back.placy.city/';
 
-const local_rec_endpoint = 'http://0.0.0.0:5000';
+const local_rec_endpoint = 'https://api.urban-recommender.placy.city/';
 const public_rec_endpoint = 'https://api.urban-recommender.placy.city/';
 
 export default class App extends Component {
