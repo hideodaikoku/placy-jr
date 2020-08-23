@@ -4,7 +4,7 @@
 
 `npm run build`
 
-`aws s3 sync build/ s3://urban-rhythm-guide-front`
+`aws s3 sync build/ s3://rhythm.placy.city`
 
 ## Development environment
 
