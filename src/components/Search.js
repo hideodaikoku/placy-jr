@@ -149,7 +149,11 @@ class Search extends Component{
                     <div className={SearchPageStyles.info} onClick={this.showModal}>i</div>
                 </div>
                 }
+                {this.props.changed?
+                null
+                :
                 <Footer/>
+                }
             </div>
         )
 
