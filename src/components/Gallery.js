@@ -29,7 +29,7 @@ export default class Gallery extends Component{
                 <div className={galleryStyles.gridContainer}>
                         <div className={galleryStyles.grid}>
                             {stationData.map(station=>(
-                                <div key={station.station_id} onClick={()=>this.props.selectStation(station.station_id)}>
+                                <div key={station.station_id} onClick={()=>this.props.selectStation(station.place_id)}>
                                     <img 
                                         src={svg_hosting_endpoint+pngData[station.station_id]} 
                                         alt={station.station}
