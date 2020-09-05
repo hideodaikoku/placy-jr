@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "aws s3 sync build/ s3://urban-rhythm-guide-front",
+    "deploy": "aws s3 sync build/ s3://rhythm.placy.city",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
