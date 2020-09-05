@@ -78,20 +78,6 @@ a.arrowLink{
     grid-column: 1 / 1;
 }
 
-@media only screen and (max-width:560px){
-    .titleContainer{
-        width: 100%;
-    }
-
-    .gridContainer{
-        max-width: 450px;
-    }
-
-    #title, #arrow{
-        max-width: 450px;
-        margin: 0 auto;
-    }
-}
 
 @media only screen and (max-width:480px){
     .titleContainer{
@@ -104,5 +90,48 @@ a.arrowLink{
 
     #title, #arrow{
         max-width: 350px;
+        margin-left: 4rem;
+    }
+}
+
+
+@media only screen and (max-width:326px){
+    .titleContainer{
+        width: 100%;
+    }
+    .container{
+        width: 90vw;
+    }
+    .gridContainer{
+        max-width: 250px;
+    }
+
+    #title, #arrow{
+        max-width: 300px;
+        padding-left: 1rem;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+
+    .container{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        width: 90vw;
+        padding:0;
+    }
+    .titleContainer{
+        width: 100%;
+    }
+
+    .gridContainer{
+        max-width: 450px;
+    }
+
+    #title, #arrow{
+        max-width: 450px;
+        margin: 0 auto;
+        padding-left: 1rem;
     }
 }

@@ -133,9 +133,14 @@
         font-size: 1.6rem; 
         padding: .5rem;
         z-index: 0;
+        min-width: 170px;
+        max-width: 220px;
         cursor: pointer;
     }
 }
+
+
+
 
 @media only screen and (max-width: 1200px){
     .parent{
@@ -159,23 +164,27 @@
             }
         }
         .info{
-            bottom: 2rem;
+            bottom: 3rem;
             left: 50%;
             font-size: 1.2rem;
         }
     }
 }
 
-@media only screen and (max-width: 625px){
+@media only screen and (max-width: 480px){
     .parent{
         .container{
             flex-direction: column;
             .sidebar{
-                max-width: 320px;
-                width: 320px;
+                width: 80%;
+                padding:0;
+                margin:0;
+                .topContainer{
+                    left: 0;
+                }
             }
             .imgContainer{
-                max-width: 320px;
+                max-width: 250px;
             }
         }
     }
