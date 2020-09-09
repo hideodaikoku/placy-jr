@@ -95,7 +95,15 @@ class Search extends Component{
                             {helpText.text}
                         </div>
                         <div className={SearchPageStyles.textContainer}>
-                            <small>2020年3月現在の情報です</small>
+                            <small>2020年9月現在の情報です</small>
+                        </div>
+                        <div className={SearchPageStyles.textContainer}>
+                            <a 
+                                className={SearchPageStyles.link}
+                                href="https://placy.typeform.com/to/itHyf0" 
+                                alt="店舗情報修正報告">
+                                店舗情報修正の報告はこちら
+                            </a>
                         </div>
                         <SearchBar
                             handleInputChange = {this._handleInputChange}

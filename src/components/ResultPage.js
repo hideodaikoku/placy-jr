@@ -109,6 +109,13 @@ export default class ResultPage extends Component {
                                 <div className={ResultPageStyles.barTitle}>
                                     <span className={ResultPageStyles.number}>{idx+1}</span>
                                     <span className={ResultPageStyles.clubName}>{bar.club_name_en}</span>
+                                    {
+                                        bar.closed?
+                                        <span className={ResultPageStyles.closed}>
+                                            開店
+                                        </span>
+                                        :null
+                                    }
                                 </div>
                                 
                                 

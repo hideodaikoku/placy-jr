@@ -39,6 +39,12 @@
                 display:flex;
                 justify-content: center;
                 margin-top: 1rem;
+                .link{
+                    // text-decoration: none;
+                    color: rgb(0, 0, 0);
+                    font-size: .8rem;
+                    cursor: pointer;
+                }
             }
             .resultBox{
                 position: relative;
