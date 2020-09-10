@@ -112,7 +112,7 @@ export default class ResultPage extends Component {
                                     {
                                         bar.closed?
                                         <span className={ResultPageStyles.closed}>
-                                            開店
+                                            閉店
                                         </span>
                                         :null
                                     }
